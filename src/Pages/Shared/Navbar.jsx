@@ -104,6 +104,7 @@ const Navbar = () => {
                                         Admin
                                     </NavLink>
                                 </li>
+                                
                                 {
                                     user && <li onClick={handleLogOut}
                                     className="text-white font-semibold hover:text-[#feda00]">

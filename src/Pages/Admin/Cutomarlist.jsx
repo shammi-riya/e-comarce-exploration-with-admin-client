@@ -3,19 +3,20 @@ import { useEffect, useState } from "react";
 
 
 const Cutomarlist = () => {
-const [customers,setCustomers] = useState([])
+const [allUser,setAllUser] = useState([])
 
 
     useEffect(()=>{
 
         axios.get('http://localhost:5000/all-user')
         .then(res=>{
-            setCustomers(res.data)
+            setAllUser(res.data)
         })
 
     },[])
 
 
+    const customerList = allUser.filter(user=>user.role=="customer")
 
     return (
         <div>
@@ -29,12 +30,12 @@ const [customers,setCustomers] = useState([])
                             </tr>
                         </thead>
                         <tbody>
-                            {customers?.map(customer => (
+                            {customerList?.map(customer => (
                                 <tr key={customer ._id} className="px-5 border-b text-center">
                                     <td className="py-2 ">{customer?.username}</td>
                                     
                                     <td className="py-2 ">{customer?.email}</td>
-                                    <td className="py-2 ">user</td>
+                                    <td className="py-2 ">{customer?.role}</td>
                                    
                                 </tr>
                             ))}

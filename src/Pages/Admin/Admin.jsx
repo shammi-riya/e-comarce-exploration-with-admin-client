@@ -11,8 +11,8 @@ const Admin = () => {
         { name: "dashboard", link: "dashbord", icon: MdOutlineDashboard },
         { name: "Addproduct", link: "addproducts", icon: MdOutlineProductionQuantityLimits},
         { name: "Cutomarlist", link: "cutomarlist", icon: FiUsers },
-        { name: "Orderlist", link: "orderlist", icon: TbReportAnalytics, margin: true },
         { name: "productlist", link: "productlist", icon: FiShoppingCart },
+        { name: "Orderlist", link: "orderlist", icon: TbReportAnalytics, margin: true },
         { name: "Home", link: "/", icon: AiFillHome, margin: true },
         { name: "Setting", link: "/", icon: RiSettings4Line },
     ];

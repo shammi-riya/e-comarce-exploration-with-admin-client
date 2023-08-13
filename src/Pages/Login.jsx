@@ -15,8 +15,6 @@ const Login = () => {
     e.preventDefault();
 
     const email = e.target.email.value;
-    const numberString = e.target.number.value;
-    const number = parseInt(numberString, 10); 
     const password = e.target.password.value;
 
    
@@ -59,19 +57,7 @@ const Login = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex -mx-3">
-                                    <div className="w-full px-3 mb-5">
-                                        <label htmlFor="" className="text-xs font-semibold px-1">Modile Number</label>
-                                        <div className="flex">
-                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-Mobile-outline text-gray-400 text-lg"></i></div>
-                                            <input type="tel"
-                                                name="number"
-                                                className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-[#21476b]"
-                                                placeholder="+88*************" 
-                                                defaultValue='+88'/>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                                 <div className="flex -mx-3">
                                     <div className="w-full px-3 mb-8">
                                         <label htmlFor="" className="text-xs font-semibold px-1">Password</label>

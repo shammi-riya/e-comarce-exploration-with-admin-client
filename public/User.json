@@ -1,0 +1,81 @@
+[
+    {
+      "_id": "64d69dd060b550e7f190d282",
+      "email": "akhi@gmail.com",
+      "username": "Aliasajahan",
+      "role":"customer"
+    },
+    {
+      "_id": "64d69e8360b550e7f192bc75",
+      "email": "abir@gmail.com",
+      "username": "Abir",
+      "role":"Admin"
+     
+    },
+    {
+      "_id": "64d7ef8260b550e7f117cc86",
+      "email": "alisha@gmail.com",
+      "username": "Aliasa",
+      "role":"customer"
+    },
+    {
+      "_id": "64d89de560b550e7f1e1180b",
+      "email": "Sihkanto@gmail.com",
+      "username": "Sihkanto",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8a60e60b550e7f1f70fe2",
+      "email": "anjuman@gmail.com",
+      "username": "anjuman",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8a8cd60b550e7f1fee496",
+      "email": "asa@gmail.com",
+      "username": "asha",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8bdbe60b550e7f1381de1",
+      "email": "khfil@gmail.com",
+      "username": "khfil",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8c64560b550e7f14f19de",
+      "email": "hafiza@gmail.com",
+      "username": "hafiza",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8c72960b550e7f151a152",
+      "email": "bipasha@gmail.com",
+      "username": "bipasha",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8c81760b550e7f154215e",
+      "email": "kanta@gmail.com",
+      "username": "Knata",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8c91160b550e7f156c6d8",
+      "email": "jamil@gmail.com",
+      "username": "jamil",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8ca4860b550e7f15a1c65",
+      "email": "rakib@gmail.com",
+      "username": "rakib",
+      "role":"customer"
+    },
+    {
+      "_id": "64d8cb9860b550e7f15d9e69",
+      "email": "a@gmail.com",
+      "username": "hamja",
+      "role":"customer"
+    }
+  ]

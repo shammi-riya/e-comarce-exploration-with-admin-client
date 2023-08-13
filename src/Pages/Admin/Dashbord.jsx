@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { BiCar } from "react-icons/bi";
 import {  FiUserPlus, FiUserX } from "react-icons/fi";
+import mockOrders from "../../Api/OrderProducts";
 
 const Dashbord = () => {
 
@@ -51,7 +52,7 @@ const Dashbord = () => {
                    <span> <BiCar></BiCar></span>
                 </div>
                 <h1>Order</h1>
-                <p>7</p>
+                <p>{mockOrders.length||0}</p>
               </div>
            </div>
         </div>
