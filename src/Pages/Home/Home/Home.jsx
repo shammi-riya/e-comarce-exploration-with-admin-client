@@ -1,5 +1,6 @@
 import Bannar from "../Bannar";
 import Collection from "./Collection";
+import Featurseproducts from "./Featurseproducts";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Bannar></Bannar>
             <Collection></Collection>
+            <Featurseproducts></Featurseproducts>
         </div>
     );
 };

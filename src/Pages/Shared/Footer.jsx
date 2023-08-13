@@ -155,7 +155,7 @@ const Footer = () => {
                     <div
                         className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left"
                     >
-                        <div>
+                        <div className='hidden lg:block md:block'>
                             <strong className=" text-white font-bold"> Contuct </strong>
 
                             <ul className="mt-6 space-y-1">

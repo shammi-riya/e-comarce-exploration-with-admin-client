@@ -7,6 +7,8 @@ import { AddtoCart } from '../../Api/cart';
 import useAddCartProducts from '../../Api/useAddCartProducts';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Modal from '../../Component/Modal';
+import Loader from '../../Component/Loader';
 
 const Products = () => {
     const { user } = useContext(AuthContext)
@@ -17,7 +19,7 @@ const Products = () => {
     const [selectedProduct, setSelectedProduct] = useState(null)
 
     if (loading) {
-        return <div>loading.........</div>
+        return <Loader></Loader>
     }
 
 
@@ -90,29 +92,9 @@ const Products = () => {
 
             </div>
 
-            {selectedProduct && (
-                <div className="fixed  p-5 inset-0 border-2 border-yellow-200 flex justify-center items-center bg-black bg-opacity-50">
-                    <div className="bg-white p-10 w-1/3 mx-auto text-xl font-semibold shadow-amber-50 relative">
-                        <div className='flex gap-2 border-2'>
-                            <div className='w-1/2 '>
-                                <img src={selectedProduct?.img} alt="" />
-                            </div>
-                            <div className='p-5'>
-                                <p>Name: {selectedProduct?.name}</p>
-                                <p>Price: {selectedProduct?.price}</p>
-                                <p>Extra Tax: {selectedProduct?.extraTax}</p>
-                                <p>Product Code: {selectedProduct?.productCode}</p>
-                                <p>Product Stock: {selectedProduct?.stock ? "true" : "false"}</p>
-                                <p>Product Quantity: {selectedProduct?.quantity}</p>
-                                <p>Product Brand: {selectedProduct?.brand}</p>
-                            </div>
-                        </div>
-                        <button className="mt-4 bg-red-600 px-4 text-2xl text-white py-2 absolute -top-3 right-1" onClick={closeModal}>X</button>
-                    </div>
-                </div>
-            )}
-
-
+            {
+                selectedProduct && <Modal selectedProduct={selectedProduct} closeModal={closeModal}></Modal>
+            }
         </div>
     )
 }

@@ -5,7 +5,7 @@ import phone3 from '../../../assets/4124.png_860.png';
 
 const Collection = () => {
     return (
-        <div className='grid grid-cols-3 gap-5 lg:max-w-7xl mx-auto my-10 lg:px-0 px-10 w-full'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:max-w-7xl mx-auto my-10 lg:px-0 px-10 w-full'>
             <div className='flex gap-3 text-center bg-white shadow-xl p-2 transition transform  hover:shadow-2xl'>
                 <div className='flex justify-center items-center'>
                     <div className='space-y-2 p-2'>
