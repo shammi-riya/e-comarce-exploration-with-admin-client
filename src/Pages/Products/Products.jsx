@@ -5,9 +5,13 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/Authprovider';
 import { AddtoCart } from '../../Api/cart';
 import useAddCartProducts from '../../Api/useAddCartProducts';
+import { toast } from 'react-toastify';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Products = () => {
     const { user } = useContext(AuthContext)
+    const navigate = useNavigate();
+    const location = useLocation();
     const [productData, loading] = Product();
     const [, , refetch] = useAddCartProducts();
     const [selectedProduct, setSelectedProduct] = useState(null)
@@ -37,6 +41,10 @@ const Products = () => {
             };
 
             AddtoCart(productInfo, refetch);
+        }else{
+            toast('plz login now!')
+            navigate("/login", { state: { from: location } })
+
         }
     };
 

@@ -11,13 +11,14 @@ import Cutomarlist from "../../Pages/Admin/Cutomarlist";
 import Orderlist from "../../Pages/Admin/Orderlist";
 import Productlist from "../../Pages/Admin/productlist";
 import Dashbord from "../../Pages/Admin/Dashbord";
+import Err from "../../Pages/Err";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Main/>,
-      // errorElement: <ErrorPage />,
+      errorElement: <Err></Err>,
       children: [
         {
           path: "/",
